@@ -1,0 +1,1079 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f8fafc;
+    color: #0f172a;
+}
+/* =========================
+   HEADER
+========================= */
+.header {
+    background: linear-gradient(135deg, #0f0782, #0f0782);
+    padding: 18px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT SIDE: LOGO + NAME */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-logo {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* RIGHT SIDE: SEARCH + AUTH */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+.search-form {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 4px;
+    border: 1px solid #e5e7eb;
+}
+
+.search-form input {
+    border: none;
+    outline: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.search-form button {
+    border: none;
+    background: #383f8f;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Disable hover effect */
+.search-form button:hover {
+    background: #383f8f;
+}
+
+/* =========================
+   AUTH BUTTONS
+========================= */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-btn {
+    background: #ffffff;
+    color: #0f172a;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.profile-btn.outline {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+.error-box {
+    background: #3c559a;
+    color: #d3caca;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ===============================
+   GARAGE GRID
+================================ */
+
+.garage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 260px); /* 🔥 FIXED SIZE */
+    gap: 25px;
+    padding: 40px;
+    justify-content: center; /* center when fewer cards */
+}
+
+/* ===============================
+   GARAGE CARD
+================================ */
+
+.garage-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+
+    width: 260px; /* 🔥 FORCE SAME WIDTH */
+}
+
+.garage-card:hover {
+   
+    box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+/* ===============================
+   GARAGE IMAGE
+================================ */
+
+.garage-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===============================
+   GARAGE BODY
+================================ */
+
+.garage-body {
+    padding: 16px;
+}
+
+.garage-body h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #0f172a;
+}
+
+/* ===============================
+   TEXT STYLES
+================================ */
+
+.location {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.desc {
+    font-size: 14px;
+    color: #475569;
+    margin: 10px 0;
+}
+
+/* ===============================
+   VIEW BUTTON
+================================ */
+
+.view-btn {
+    display: block;
+    text-align: center;
+    background: #0f0782;
+    color: #ffffff;
+    padding: 11px;
+    border-radius: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+   
+    text-decoration: none;
+}
+
+.view-btn:hover {
+    background: #0c0568;
+}
+
+/* ===============================
+   EMPTY STATE
+================================ */
+
+.empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 18px;
+    color: #64748b;
+    padding: 60px;
+}
+
+
+
+/*loginnnnn
+ register */
+
+/* PAGE BACKGROUND */
+.container {
+    min-height: 100vh;
+    background: white; /* DARK BLUE */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.card {
+    background: #292d82; /* WHITE CARD */
+    width: 100%;
+    max-width: 420px;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* TITLE */
+.card h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+/* LABELS */
+.card label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: white;
+}
+
+/* INPUTS */
+.card input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    font-size: 14px;
+    outline: none;
+}
+
+
+
+/* BUTTON */
+.card button {
+    width: 100%;
+    background: #4a42be; /* BLUE SHADE */
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.card button:hover {
+    background: #0f0782;
+}
+
+/* BOTTOM TEXT */
+.card p {
+    margin-top: 18px;
+    font-size: 14px;
+    color: white;
+}
+
+/* LINKS */
+.card a {
+    font-weight: 600;
+    color: #0f0782;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* show garagge */
+
+/* ===== Garage Details Container ===== */
+.garage-details {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 12px 35px rgba(15, 7, 130, 0.15);
+}
+
+/* ===== Titles ===== */
+.garage-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0f0782;
+    margin-bottom: 10px;
+}
+
+.garage-desc {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.services-title {
+    font-size: 22px;
+    color: #0f0782;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0f0782;
+    padding-bottom: 8px;
+}
+
+/* ===== Service Card ===== */
+.service-card {
+    background: #f6f7ff;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d9ddff;
+
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(15, 7, 130, 0.2);
+}
+
+/* ===== Service Info ===== */
+.service-info strong {
+    font-size: 18px;
+    color: #0f0782;
+}
+
+.service-info p {
+    font-size: 14px;
+    color: #3f51b5;
+    margin-top: 5px;
+}
+
+
+
+/* ===== Edit Garage Button ===== */
+.edit-garage-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    background: rgb(12, 14, 120);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+   
+    
+}
+
+.edit-garage-btn:hover {
+    background: linear-gradient(135deg, #3f51b5, #0f0782);
+   
+}
+
+
+/* ===== Booking Form ===== */
+.booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.booking-form input {
+    background: #ffffff;
+    border: 1px solid #0f0782;
+    border-radius: 6px;
+    padding: 7px 10px;
+    color: #0f0782;
+    font-size: 13px;
+}
+
+.booking-form input:focus {
+    outline: none;
+    border-color: #3f51b5;
+}
+
+/* ===== Buttons ===== */
+.booking-form button {
+    background: #0f0782;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+   
+}
+
+.booking-form button:hover {
+    background: #1a12a5;
+    transform: scale(1.05);
+}
+
+/* ===== Notes ===== */
+.owner-note {
+    font-size: 13px;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.login-note {
+    font-size: 13px;
+    color: #555;
+}
+
+.login-note a {
+    color: #0f0782;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-note a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .service-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .booking-form {
+        width: 100%;
+    }
+
+    .booking-form input,
+    .booking-form button {
+        width: 100%;
+    }
+}
+/* ===== GARAGE FORM ===== */
+.garage-form-container {
+    max-width: 420px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(15, 7, 130, 0.18);
+}
+
+.garage-form-title {
+    text-align: center;
+    color: #0f0782;
+    margin-bottom: 22px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.garage-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f0782;
+}
+
+.garage-form input,
+.garage-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1.5px solid #c7c9f4;
+    font-size: 14px;
+    outline: none;
+}
+
+.garage-form input:focus,
+.garage-form textarea:focus {
+    border-color: #0f0782;
+}
+
+.garage-form button {
+    width: 100%;
+    background: #0f0782;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+
+   
+}
+
+.garage-form button:hover {
+    background: #1b14b8;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .garage-form-container {
+        margin: 30px 15px;
+        padding: 24px;
+    }
+}
+
+/*cretae gaarge */
+/* ===== GARAGE FORM (CREATE & EDIT) ===== */
+
+.garage-form-container {
+    max-width: 420px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 14px 35px rgba(15, 7, 130, 0.18);
+}
+
+.garage-form-title {
+    text-align: center;
+    color: #0f0782;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+/* Form */
+.garage-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f0782;
+}
+
+.garage-form input,
+.garage-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1.5px solid #cfd2ff;
+    font-size: 14px;
+    outline: none;
+    background: #ffffff;
+}
+
+.garage-form textarea {
+    resize: none;
+}
+
+
+
+/* Button */
+.garage-form button {
+    width: 100%;
+    background: #0f0782;
+    color: #ffffff;
+    padding: 13px;
+    border-radius: 12px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.garage-form button:hover {
+    background: #1c14c9;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .garage-form-container {
+        margin: 30px 15px;
+        padding: 24px;
+    }
+}
+
+
+
+
+/*view services*/
+/* ================================
+   SERVICES PAGE – BRIGHT THEME
+================================ */
+
+.services-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    color: #0d275c;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.services-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #27219a; 
+}
+
+.services-container p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    color:rgb(36, 24, 167);
+}
+
+/* ================================
+   SERVICE ROWS
+================================ */
+
+.service-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0f9ff;
+    border: 2px solid #243691;
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+  
+}
+
+
+.service-row input {
+    accent-color: #250981; /* green checkbox */
+    
+}
+
+/* ================================
+   DATE & TIME
+================================ */
+
+.date-time {
+    display: flex;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.date-time input {
+    flex: 1;
+    padding: 12px;
+    background: #ffffff;
+    border: 2px solid #0d054e;
+    color: #060f6c;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* ================================
+   BUTTON
+================================ */
+
+.services-container button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #140e82, #121c90);
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+   
+  
+}
+
+
+
+/* ================================
+   OWNER NOTE
+================================ */
+
+.note {
+    background: rgb(91, 95, 160);
+    border-color: #0d054e;
+    padding: 14px;
+    border-radius: 13px;
+    color: rgb(9, 21, 154);
+    font-weight: 500;
+}
+
+/* ================================
+   LOGIN LINK
+================================ */
+
+.services-container a {
+    color: #160b68; 
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+/* Booking message */
+.success-message {
+    background: #0b0f99;
+    color: white;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* data tablesss */
+/* ===============================
+   DATATABLES – SERVICES PAGINATION
+   =============================== */
+/* ===== DataTables – Services Table ===== */
+
+#servicesTable {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+#servicesTable thead th {
+    background: #0f0782;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 14px;
+}
+
+#servicesTable tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e4ff;
+    font-size: 14px;
+}
+
+
+
+/* Pagination */
+.dataTables_paginate {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.dataTables_paginate .paginate_button {
+    background: #e8ebff !important;
+    border: none !important;
+    border-radius: 8px;
+    padding: 7px 14px;
+    margin: 0 4px;
+    color: #0f0782 !important;
+    font-weight: 600;
+}
+
+.dataTables_paginate .paginate_button.current {
+    background: white !important;
+    color: #ffffff !important;
+}
+
+.dataTables_filter {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+/* ===== profile ===== */
+/* ===== PROFILE PAGE ===== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f4f6fb;
+}
+
+/* Main container */
+.profile-container {
+    max-width: 420px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(15, 7, 130, 0.15);
+}
+
+/* Title */
+.profile-title {
+    text-align: center;
+    color: #0f0782;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+/* User info */
+.profile-info p {
+    font-size: 15px;
+    color: #333;
+    margin: 6px 0;
+}
+
+/* Divider */
+.profile-container hr {
+    border: none;
+    height: 1px;
+    background: #e5e7f3;
+    margin: 22px 0;
+}
+
+/* Section heading */
+.section-title {
+    color: #0f0782;
+    margin-bottom: 12px;
+}
+
+/* Warning text */
+.warning-text {
+    color: #2b1b94;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+/* Buttons base */
+.profile-container a,
+.profile-container button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Primary button */
+.btn-primary {
+    background: white;
+    color: #0f0782;
+  border: 2px solid #0f0782;
+}
+
+
+/* Outline button */
+.btn-outline {
+    background: white;
+    color: #0f0782;
+    border: 2px solid #0f0782;
+}
+
+
+
+/* Secondary button */
+.btn-secondary {
+    background: white;
+    color: #0f0782;
+     border: 2px solid #0f0782;
+}
+
+
+
+/* Logout */
+.logout-form {
+    margin-top: 10px;
+}
+
+.btn-danger {
+    background: #29286b;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #3e369a;
+}
+
+/* Mobile friendly */
+@media (max-width: 480px) {
+    .profile-container {
+        margin: 30px 15px;
+        padding: 22px;
+    }
+}
+
+/* add services */
+/* ===== Add Service Page ===== */
+
+.service-form-container {
+    max-width: 420px;
+    margin: 70px auto;
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(15, 7, 130, 0.15);
+    text-align: center;
+}
+
+/* Title */
+.service-form-title {
+    font-size: 22px;
+    color: #0f0782;
+    margin-bottom: 22px;
+}
+
+/* Form */
+.service-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Inputs */
+.service-form input {
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 2px solid #0f0782;
+    outline: none;
+    color: #0f0782;
+}
+
+.service-form input::placeholder {
+    color: #6b6fae;
+}
+
+.service-form input:focus {
+    border-color: #3f51b5;
+}
+
+/* Button */
+.service-form button {
+    margin-top: 8px;
+    padding: 12px;
+    background: #0f0782;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.service-form button:hover {
+    background: #1a12a5;
+
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .service-form-container {
+        margin: 40px 15px;
+        padding: 22px;
+    }
+}
+
+
+/* ===== My Bookings Page ===== */
+.bookings-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 25px;
+}
+
+/* Page titles */
+.page-title {
+    text-align: center;
+    font-size: 26px;
+    color: #0f0782;
+    margin: 50px 0 30px;
+}
+
+/* Booking card */
+.booking-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 18px;
+    border: 1px solid #d9ddff;
+    box-shadow: 0 8px 20px rgba(15, 7, 130, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(15, 7, 130, 0.18);
+}
+
+/* Booking text */
+.booking-card p {
+    font-size: 14px;
+    color: #333;
+    margin: 6px 0;
+}
+
+.booking-card strong {
+    color: #0f0782;
+}
+
+/* Empty message */
+.empty {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    margin: 40px 0;
+}
+
+
+/* Service Delete Button */
+/* Service Delete Button */
+.service-card .delete-btn {
+    background: #1a0880;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 0; /* remove extra spacing */
+}
+
+.service-card .delete-btn:hover {
+    background: #bb2d3b;
+}
+
+/* Move delete button to the same place as the removed line */
+.service-card form {
+    margin-left: auto;
+}
+/*delete booking */
+.delete-btn {
+    margin-top: 10px;
+    background: rgb(12, 14, 120);
+    color: #fff;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #b71c1c;
+}
+
